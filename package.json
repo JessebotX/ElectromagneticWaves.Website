@@ -1,0 +1,21 @@
+{
+  "name": "electromagneticwaves.website",
+  "version": "1.0.0",
+  "description": "a website about electromagnetic waves and the electromagnetic spectrum",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JessebotX/ElectromagneticWaves.Website.git"
+  },
+  "author": "",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/JessebotX/ElectromagneticWaves.Website/issues"
+  },
+  "homepage": "https://github.com/JessebotX/ElectromagneticWaves.Website#readme",
+  "devDependencies": {}
+}
