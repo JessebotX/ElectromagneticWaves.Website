@@ -36,9 +36,13 @@
 
     <main class="mx-0 mx-auto my-3">
         <div class="container">
+            <div class="jumbotron bg-dark text-info">Input fields are case insensitive (uppercase/lowercase answers dont matter). Though, dont leave any trailing spaces or it will tell you it's incorrect</div>
+            <br>
             <dl>
-                <dt> 1. If frequency was increased by a factor of 10, then wavelength will decrease to ____ of its initial value</dt>
+                <dt> 1. If frequency was increased by a factor of 10, then wavelength will decrease to ____ of its initial value 
+                    </dt>
                 <dd> 
+                    (hint: wavelength and frequency are inversely proportional, it is also a fraction (you can represent a fraction with a <kbd>/</kbd>)
                     <input type="text" id="q1"> <button class="btn btn-primary btn-sm" id="q1btn">Submit</button>
                     <script>
                         document.querySelector('#q1btn').addEventListener('click', function() {
@@ -97,7 +101,43 @@
                         });
                     </script>
                 </dd>
+                <dt> 5. ___________ founded the concept of Photons </dt>
+                <dd>
+                    (there is a space between first and last name) <br>
+                    <input type="text" id="q5"> <button class="btn btn-primary btn-sm" id="q5btn">Submit</button>
+                    <script>
+                        document.querySelector('#q5btn').addEventListener('click', function() {
+                            if (document.querySelector('#q5').value.toLowerCase() == 'albert einstein') {
+                                alert('correct');
+                            } else if (document.querySelector('#q5').value.toLowerCase() == 'hello') {
+                                alert('hello');
+                            } else {
+                                alert('incorrect, answer is: albert einstein');
+                            }
+                        });
+                    </script>
+                </dd>
+                <dt> 6. ___________ is the unit for frequency </dt>
+                <dd>
+                    (dont answer with the full unit name. eg. <code>s</code> not seconds) <br>
+                    <input type="text" id="q6"> <button class="btn btn-primary btn-sm" id="q6btn">Submit</button>
+                    <script>
+                        document.querySelector('#q6btn').addEventListener('click', function() {
+                            if (document.querySelector('#q6').value.toLowerCase() == 'hz' || document.querySelector('#q6').value.toLowerCase() == 's^-1') {
+                                alert('correct');
+                            } else if (document.querySelector('#q6').value.toLowerCase() == 'hello') {
+                                alert('hello');
+                            } else {
+                                alert('incorrect, answer is: hz or s^-1');
+                            }
+                        });
+                    </script>
+                </dd>
             </dl>
+            <br>
+            <div>
+                THE END: See <a href="/pages/bibliography.html">bibliography</a> if you want to
+            </div>
         </div>
     </main>
 
