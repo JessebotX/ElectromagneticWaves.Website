@@ -1,21 +1,36 @@
 {
   "name": "electromagneticwaves.website",
   "version": "1.0.0",
-  "description": "a website about electromagnetic waves and the electromagnetic spectrum",
-  "main": "index.js",
+  "description": "website about electromagnetic waves",
   "private": true,
+  "main": "node.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JessebotX/ElectromagneticWaves.Website.git"
   },
-  "author": "",
+  "author": "Jesse",
   "license": "LGPL-3.0",
   "bugs": {
     "url": "https://github.com/JessebotX/ElectromagneticWaves.Website/issues"
   },
   "homepage": "https://github.com/JessebotX/ElectromagneticWaves.Website#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "bootstrap": "^4.5.2",
+    "css-loader": "^4.2.2",
+    "mini-css-extract-plugin": "^0.11.0",
+    "postcss": "^7.0.32",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
 }

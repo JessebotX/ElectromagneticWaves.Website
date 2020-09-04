@@ -3,147 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:site_name" content="Electromagnetic Waves and the Electromagnetic Spectrum">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta property="og:title" 
+        content="Electromagnetic Waves and the Electromagnetic Spectrum" />
+    <meta property="og:description"
+        content="Quiz" />
 
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <script defer src="/dist/js/main.bundle.js"></script>
 
     <title>
-        Quiz | Electromagnetic Waves and the Electromagnetic Spectrum
+        Quiz
     </title>
 </head>
-<body class="text-white" style="background-color: #111111;">
-    <h1 class="display-5 text-center border-bottom">Electromagnetic Waves and the Electromagnetic Spectrum</h1>
-
-    <nav>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb bg-dark">
+<body>
+    <section class="container">
+        <header class="d-block text-center p-2 border-bottom">
+            <h1 class="display-4"> Quiz </h1>
+            by Jesse Huang
+            <ul class="breadcrumb bg-dark">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                    <a href="/pages/quiz.html" class="text-secondary">Quiz</a>
-                </li>
-            </ol>
-        </nav>
-    </nav>
+                <li class="breadcrumb-item">Quiz</li>
+            </ul>
+        </header>
 
-    <main class="mx-0 mx-auto my-3">
-        <div class="container">
-            <div class="jumbotron bg-dark text-info">Input fields are case insensitive (uppercase/lowercase answers dont matter). Though, dont leave any trailing spaces or it will tell you it's incorrect</div>
-            <br>
-            <dl>
-                <dt> 1. If frequency was increased by a factor of 10, then wavelength will decrease to ____ of its initial value 
-                    </dt>
-                <dd> 
-                    (hint: wavelength and frequency are inversely proportional, it is also a fraction (you can represent a fraction with a <kbd>/</kbd>)
-                    <input type="text" id="q1"> <button class="btn btn-primary btn-sm" id="q1btn">Submit</button>
-                    <script>
-                        document.querySelector('#q1btn').addEventListener('click', function() {
-                            if (document.querySelector('#q1').value.toLowerCase() == '1/10') {
-                                alert('correct');
-                            } else if (document.querySelector('#q1').value.toLowerCase() == 'hello') {
-                                alert('hello');
-                            } else {
-                                alert('incorrect, answer is: 1/10');
-                            }
-                        });
-                    </script>
-                </dd>
-                <dt> 2. Photon is a ________ particle.</dt>
-                <dd>
-                    <input type="text" id="q2"> <button class="btn btn-primary btn-sm" id="q2btn">Submit</button>
-                    <script>
-                        document.querySelector('#q2btn').addEventListener('click', function() {
-                            if (document.querySelector('#q2').value.toLowerCase() == 'elementary') {
-                                alert('correct');
-                            } else if (document.querySelector('#q2').value.toLowerCase() == 'hello') {
-                                alert('hello');
-                            }else {
-                                alert('incorrect, answer is: elementary')
-                            }
-                        });
-                    </script>
-                </dd>
-                <dt> 3. What does the greek lambda represent in physics? </dt>
-                <dd>
-                    <input type="text" id="q3"> <button class="btn btn-primary btn-sm" id="q3btn">Submit</button>
-                    <script>
-                        document.querySelector('#q3btn').addEventListener('click', function() {
-                            if (document.querySelector('#q3').value.toLowerCase() == 'wavelength') {
-                                alert('correct');
-                            } else if (document.querySelector('#q3').value.toLowerCase() == 'hello') {
-                                alert('hello');
-                            } else {
-                                alert('incorrect, answer is: wavelength');
-                            }
-                        });
-                    </script>
-                </dd>
-                <dt> 4. ___________ rays is above visible light in the electromagnetic spectrum </dt>
-                <dd>
-                    <input type="text" id="q4"> <button class="btn btn-primary btn-sm" id="q4btn">Submit</button>
-                    <script>
-                        document.querySelector('#q4btn').addEventListener('click', function() {
-                            if (document.querySelector('#q4').value.toLowerCase() == 'ultraviolet' || document.querySelector('#q4').value.toLowerCase() == 'uv') {
-                                alert('correct');
-                            } else if (document.querySelector('#q4').value.toLowerCase() == 'hello') {
-                                alert('hello');
-                            } else {
-                                alert('incorrect, answer is: UV or Ultraviolet');
-                            }
-                        });
-                    </script>
-                </dd>
-                <dt> 5. ___________ founded the concept of Photons </dt>
-                <dd>
-                    (there is a space between first and last name) <br>
-                    <input type="text" id="q5"> <button class="btn btn-primary btn-sm" id="q5btn">Submit</button>
-                    <script>
-                        document.querySelector('#q5btn').addEventListener('click', function() {
-                            if (document.querySelector('#q5').value.toLowerCase() == 'albert einstein') {
-                                alert('correct');
-                            } else if (document.querySelector('#q5').value.toLowerCase() == 'hello') {
-                                alert('hello');
-                            } else {
-                                alert('incorrect, answer is: albert einstein');
-                            }
-                        });
-                    </script>
-                </dd>
-                <dt> 6. ___________ is the unit for frequency </dt>
-                <dd>
-                    (dont answer with the full unit name. eg. <code>s</code> not seconds) <br>
-                    <input type="text" id="q6"> <button class="btn btn-primary btn-sm" id="q6btn">Submit</button>
-                    <script>
-                        document.querySelector('#q6btn').addEventListener('click', function() {
-                            if (document.querySelector('#q6').value.toLowerCase() == 'hz' || document.querySelector('#q6').value.toLowerCase() == 's^-1') {
-                                alert('correct');
-                            } else if (document.querySelector('#q6').value.toLowerCase() == 'hello') {
-                                alert('hello');
-                            } else {
-                                alert('incorrect, answer is: hz or s^-1');
-                            }
-                        });
-                    </script>
-                </dd>
-            </dl>
-            <br>
-            <div>
-                THE END: See <a href="/pages/bibliography.html">bibliography</a> if you want to
+        <main class="mx-2">
+            <div class="container">
+                <div class="jumbotron bg-dark text-info">
+                    Input fields are case insensitive (uppercase/lowercase dont matter). 
+                </div>
+                <noscript class="jumbotron bg-danger text-info">
+                    If you see this message, you currently have Scripts disabled. Please turn off Block Scripts
+                </noscript>
+                <br>
+                <dl>
+                    <dt> 1. If frequency was increased by a factor of 10, then wavelength will decrease to ____ of its initial value 
+                        </dt>
+                    <dd> 
+                        (hint: wavelength and frequency are inversely proportional, it is also a fraction (you can represent a fraction with a <kbd>/</kbd>)
+                        <input type="text" id="q1"> <button class="btn btn-primary btn-sm" id="q1btn">Submit</button>
+                    </dd>
+                    <dt> 2. Photon is an ________ particle.</dt>
+                    <dd>
+                        <input type="text" id="q2"> <button class="btn btn-primary btn-sm" id="q2btn">Submit</button>
+                    </dd>
+                    <dt> 3. What does the greek lambda represent in physics? </dt>
+                    <dd>
+                        <input type="text" id="q3"> <button class="btn btn-primary btn-sm" id="q3btn">Submit</button>
+                    </dd>
+                    <dt> 4. ___________ rays are above visible light in the electromagnetic spectrum (in terms of frequency) </dt>
+                    <dd>
+                        <input type="text" id="q4"> <button class="btn btn-primary btn-sm" id="q4btn">Submit</button>
+                    </dd>
+                    <dt> 5. ___________ founded the concept of Photons </dt>
+                    <dd>
+                        (there is a space between first and last name) <br>
+                        <input type="text" id="q5"> <button class="btn btn-primary btn-sm" id="q5btn">Submit</button>
+                    </dd>
+                    <dt> 6. ___________ is the unit symbol for frequency </dt>
+                    <dd>
+                        <input type="text" id="q6"> <button class="btn btn-primary btn-sm" id="q6btn">Submit</button>
+                    </dd>
+                </dl>
+                <br>
+                <div>
+                    THE END: See <a href="/pages/bibliography.html">bibliography</a> if you want to
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <footer class="border-top text-center">
-        © 2020 Jesse Huang. Except where otherwise noted, source code is under <a href="/pages/license.html">GNU GLPL-3.0</a> and content is under 
-        <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/us/">CC-BY-NC-SA 3.0</a>
-    </footer>
+        <footer class="d-block p-2 border-top">
+            © 2020 Jesse Huang.
+        </footer>
+    </section>
 </body>
 </html>
